@@ -1,0 +1,19 @@
+{
+	"name": "Basic http server for test pruposes",
+	"version": "0.1",
+	"description": "Server ready to use",
+	"author": "Pablo Andrés Gottifredi",
+	"license": "MIT",
+	"main": "index.html",
+	"engines": {
+	},
+	"scripts": {
+		"start": "python -m SimpleHTTPServer 8083"
+	},
+	"keywords": [
+		"simpleHTTPServer"
+	],
+	"dependencies": {
+		
+	}
+}

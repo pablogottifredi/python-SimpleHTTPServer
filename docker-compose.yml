@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  server-test:
+    restart: always
+    container_name: server-code-pyhton
+    image: server-code-pyhton
+    volumes:
+      - ./src:/var/www
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8083:8080"
+
