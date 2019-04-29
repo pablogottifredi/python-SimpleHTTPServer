@@ -6,7 +6,7 @@ The idea is mantain isolated your computer of unnecesary instalations, even abou
 ### Warning
 This first approach was built using third parties [images](elyase/staticpython)
 
-## Some concepts applied (5/12)
+### Some concepts applied (5/12)
 * Self-contained application
    Only put your code (HTML, Javascript) into the ***./src*** folder
 * Dev/Prod parity
@@ -23,13 +23,13 @@ This first approach was built using third parties [images](elyase/staticpython)
 * Disposability
 * Logs
 
-# Getting started
-## Previous requirements
+## Getting started
+### Previous requirements
 * [Docker CE version 18.09.04 or up](https://docs.docker.com/install/linux/docker-ce/ubuntu/) 
 * [Docker Compose version 1.24.0 or up](https://docs.docker.com/compose/install/) 
 * [Git client](https://git-scm.com/)
 
-## Clone or manage your code in Fork of the original reposiory
+### Clone or manage your code in Fork of the original reposiory
 
 You can use simply doing a clone of the repo and using into a local environment
 ```
