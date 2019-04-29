@@ -98,6 +98,8 @@ Now your are in the shell into de container
 ### You have changes in your code? Update it
 * Push if you have changes
 ```
+git add .
+git commit -am"Your log Changes"
 git push origin feature/my-feature
 ```
 * Merge to master of your repo
