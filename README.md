@@ -47,7 +47,7 @@ git remote add upstream https://github.com/pablogottifredi/python-SimpleHTTPServ
 ```
 * Create a [Branch](https://12factor.net/codebase)
 ```
-git checkout -b branch-my-own-code
+git checkout -b my-branch/my-feature
 ```
 
 ## How to use
@@ -100,11 +100,11 @@ Now your are in the shell into de container
 ```
 git add .
 git commit -am"Your log Changes"
-git push origin feature/my-feature
+git push origin my-branch/my-feature
 ```
 * Merge to master of your repo
 ```
-git branch -d branch-my-own-code
+git branch -d my-branch/my-feature
 git push origin master
 ```
 
