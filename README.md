@@ -1,8 +1,27 @@
-# Python Simple HTTP Server
-
+# Simple HTTP Server using Python as container to serve files
 Applying concepts of [12-factor-app](https://12factor.net/) desing you must try to have a [parity between production and dev enviroment](https://12factor.net/dev-prod-parity)
 Following that rule, a good practices is try to not install additionals tools in your computer to made quick proof or test of portions of code. 
-The idea is mantain isolated your computer of unnecesary instalations, even about http servers 
+The idea is mantain isolated your computer of unnecesary instalations, even about http servers and configs to run
+
+### Warning
+This first approach was built using third parties [images](elyase/staticpython)
+
+## Some concepts applied (5/12)
+* Self-contained application
+   Only put your code (HTML, Javascript) into the ***./src*** folder
+* Dev/Prod parity
+   Without additionals local instalation to run, OS independence, only you need docker && docker-compose 
+* Enviroment config
+   Ready to setup using ***.env*** file
+* Dependencies
+   Ready to setup additional dependencies in ***package.json*** file
+* Port binding
+   You can configure the port map into ***docker-compose.yml*** or ***Dockerfile***. Setted to work at ***8083 port***
+
+### Pending (3/12)
+* Build,release,run
+* Disposability
+* Logs
 
 # Getting started
 ## Previous requirements
@@ -31,9 +50,8 @@ git remote add upstream https://github.com/pablogottifredi/python-SimpleHTTPServ
 git checkout -b branch-my-own-code
 ```
 
-
 ## How to use
-In your development enviroment you can work an put your code in the ***./src*** folder
+In your development enviroment you can work and put your code in the ***./src*** folder
 The docker-compose is configured to map the folder and running directly into the container images
 So, any changes in your code are immediately impacted
 
@@ -52,7 +70,7 @@ docker-compose up
 
 The docker-compose is configured at 8083 port, you can run [http://localhost:8083/index.html](http://localhost:8083/index.html) in your browser or run
 ```
-CURL -G base-api-node:8080
+CURL -G http://localhost:8083/index.html
 ```
 
 
@@ -88,4 +106,7 @@ git branch -d branch-my-own-code
 git push origin master
 ```
 
-
+### License
+This code use portion of code for third parties
+* [busybox](https://hub.docker.com/_/busybox) for a linux version maintained for Docker Comunity
+* [elyase/staticpython](https://hub.docker.com/r/elyase/staticpython) for adding a precompiled image of python 2.7
