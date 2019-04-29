@@ -3,6 +3,7 @@ version: "3"
 services:
   server-test:
     restart: always
+    env_file: .env
     container_name: server-code-pyhton
     image: server-code-pyhton
     volumes:
