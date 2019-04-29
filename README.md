@@ -43,7 +43,7 @@ git clone https://github.com/pablogottifredi/python-SimpleHTTPServer.git
 ```
 * Adding a Remote
 ```
-git remote add upstream https://github.com/pablogottifredi/python-SimpleHTTPServer.git
+git remote add upstream https://github.com/pablogottifredi/python-SimpleHTTPServer.git myfork.git
 ```
 * Create a [Branch](https://12factor.net/codebase)
 ```
