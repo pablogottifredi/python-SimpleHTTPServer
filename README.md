@@ -1,4 +1,4 @@
-#Python Simple HTTP Server
+# Python Simple HTTP Server
 
 Applying concepts of [12-factor-app](https://12factor.net/) desing you must try to have a [parity between production and dev enviroment](https://12factor.net/dev-prod-parity)
 Following that rule, a good practices is try to not install additionals tools in your computer to made quick proof or test of portions of code. 
