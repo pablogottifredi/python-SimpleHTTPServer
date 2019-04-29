@@ -4,8 +4,8 @@ services:
   server-test:
     restart: always
     env_file: .env
-    container_name: ${cnt-server-simple-http}
-    image: ${img-server-simple-http}
+    container_name: ${server-simple-http}
+    image: ${server-simple-http}
     volumes:
       - ./src:/var/www
     build: 
