@@ -90,7 +90,7 @@ docker exec -ti a14332452d98 sh
 Now your are in the shell into de container
 
 
-### You have changes in your code? Update it
+### Do you have changes in your code? Update it (in your repo)
 * Push if you have changes
 ```
 git add .
@@ -102,6 +102,12 @@ git push origin my-branch/my-feature
 git branch -d my-branch/my-feature
 git push origin master
 ```
+### If you want contrib, share it before push 
+```
+git pull upstream master
+git push origin master
+```
+
 
 ### License
 This code use portion of code for third parties
