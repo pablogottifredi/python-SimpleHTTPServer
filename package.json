@@ -1,5 +1,5 @@
 {
-	"name": "",
+	"name": "python-SimpleHTTPServer",
 	"version": "0.1",
 	"description": "Server ready to use",
 	"author": "Pablo Andres Gottifredi",
@@ -14,6 +14,5 @@
 		"simpleHTTPServer"
 	],
 	"dependencies": {
-		
 	}
 }

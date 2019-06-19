@@ -1,22 +1,17 @@
 # Simple HTTP Server using Python as container to serve files
-Applying concepts of [12-factor-app](https://12factor.net/) desing you must try to have a [parity between production and dev enviroment](https://12factor.net/dev-prod-parity)
-Following that rule, a good practices is try to not install additionals tools in your computer to made quick proof or test of portions of code. 
+Applying concepts of [12-factor-app](https://12factor.net/) desing you must try to have a [parity between production and dev enviroment](https://12factor.net/dev-prod-parity)  
+Following that rule, a good practices is try to not install additionals tools in your computer to made quick proof or test of portions of code.  
 The idea is mantain isolated your computer of unnecesary instalations, even about http servers and configs to run
 
 ### Warning
 This first approach was built using third parties [images](elyase/staticpython)
 
 ### Some concepts applied (5/12)
-* Self-contained application
-   Only put your code (HTML, Javascript) into the ***./src*** folder
-* Dev/Prod parity
-   Without additionals local instalation to run, OS independence, only you need docker && docker-compose 
-* Enviroment config
-   Ready to setup using ***.env*** file
-* Dependencies
-   Ready to setup additional dependencies in ***package.json*** file
-* Port binding
-   You can configure the port map into ***docker-compose.yml*** or ***Dockerfile***. Setted to work at ***8083 port***
+* ***Self-contained application***: Only put your code (HTML, Javascript) into the ***./src*** folder
+* ***Dev/Prod parity***: Without additionals local instalation to run, OS independence, only you need docker && docker-compose 
+* ***Enviroment config***: Ready to setup using ***.env*** file
+* ***Dependencies***: Ready to setup additional dependencies in ***package.json*** file
+* ***Port binding***: You can configure the port map into ***docker-compose.yml*** or ***Dockerfile***. Setted to work at ***8083 port***
 
 ### Pending (3/12)
 * Build,release,run
@@ -51,9 +46,9 @@ git checkout -b my-branch/my-feature
 ```
 
 ## How to use
-In your development enviroment you can work and put your code in the ***./src*** folder
-The docker-compose is configured to map the folder and running directly into the container images
-So, any changes in your code are immediately impacted
+In your development enviroment you can work and put your code in the ***./src*** folder.  
+The docker-compose is configured to map the folder and running directly into the container images.  
+So, any changes in your code are immediately impacted.  
 
 
 You can see this configuration in docker-compose.yml file
@@ -95,7 +90,7 @@ docker exec -ti a14332452d98 sh
 Now your are in the shell into de container
 
 
-### You have changes in your code? Update it
+### Do you have changes in your code? Update it (in your repo)
 * Push if you have changes
 ```
 git add .
@@ -107,6 +102,12 @@ git push origin my-branch/my-feature
 git branch -d my-branch/my-feature
 git push origin master
 ```
+### If you want contrib, share it before push 
+```
+git pull upstream master
+git push origin master
+```
+
 
 ### License
 This code use portion of code for third parties
