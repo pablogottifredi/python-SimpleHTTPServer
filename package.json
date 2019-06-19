@@ -1,8 +1,8 @@
 {
-	"name": "Basic http server for test pruposes",
+	"name": "",
 	"version": "0.1",
 	"description": "Server ready to use",
-	"author": "Pablo Andrés Gottifredi",
+	"author": "Pablo Andres Gottifredi",
 	"license": "MIT",
 	"main": "index.html",
 	"engines": {
