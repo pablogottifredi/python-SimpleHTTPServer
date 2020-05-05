@@ -1,5 +1,9 @@
 FROM elyase/staticpython
+RUN mkdir /dist
+WORKDIR /dist
 
-WORKDIR /var/www/
+COPY src/. .
+
 EXPOSE 8080
-CMD [ "python", "-m", "SimpleHTTPServer", "8080" ]
+
+CMD [ "python", "server.py","8080" ]

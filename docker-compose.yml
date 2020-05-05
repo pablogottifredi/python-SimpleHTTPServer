@@ -2,7 +2,6 @@ version: "3"
 
 services:
   server-test:
-    restart: none
     env_file: .env
     container_name: ${server-simple-http}
     image: ${server-simple-http}
